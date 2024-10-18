@@ -8,7 +8,7 @@ on:
 env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.actor }}/sample-app:latest
+  IMAGE_NAME: ${{ github.actor }}/sample-vue-3:latest
 
 jobs:
     publish:
