@@ -3,7 +3,7 @@ name: publish
 on:
   push:
     tags:
-      - 'v[1-100]+.[0-100]+.[0-100]+'
+      - 'v*'
       
 env:
   # Use docker.io for Docker Hub if empty
