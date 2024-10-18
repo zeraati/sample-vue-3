@@ -1,4 +1,3 @@
-```Dockerfile
 FROM node:16.10.0-alpine3.13 as build-stage
 WORKDIR /app
 COPY package*.json ./
@@ -10,4 +9,3 @@ COPY - from=build-stage /app/dist /usr/share/nginx/html
 COPY ./nginx/default.conf /etc/nginx/conf.d/default.conf
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
-```
